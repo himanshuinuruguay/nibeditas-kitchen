@@ -1,89 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nibedita's Kitchen</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nibedita's Kitchen</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
-    <h1>🍽️ Nibedita's Kitchen</h1>
-    <p>Fresh • Hygienic • Homemade</p>
+  <a class="floating-whatsapp" href="https://wa.me/917077939378" target="_blank" aria-label="WhatsApp">
+    💬
+  </a>
 
-    <div class="status">
-        🟢 Kitchen Open
+  <header class="hero">
+    <div class="hero-badge">From Odisha with Love</div>
+    <h1>Nibedita's Kitchen</h1>
+    <p class="tagline">Fresh • Hygienic • Homemade Indian Food</p>
+
+    <div class="status-row">
+      <span class="status open">🟢 Kitchen Open</span>
+      <span class="status pickup">📍 Pickup Only</span>
     </div>
 
-    <div class="pickup">
-        📍 Pickup Only
+    <p class="hero-note">Made fresh after your order. Soft, tasty, and prepared with care.</p>
+
+    <div class="hero-actions">
+      <a href="#menu" class="btn btn-primary">Explore Menu</a>
+      <a href="https://wa.me/917077939378" target="_blank" class="btn btn-secondary">Order on WhatsApp</a>
     </div>
-</header>
+  </header>
 
-<section class="search">
-    <input type="text" placeholder="Search your favourite food...">
-</section>
+  <main>
+    <section class="search-section">
+      <input type="text" placeholder="Search your favourite food..." />
+    </section>
 
-<section class="categories">
+    <section class="section">
+      <h2>Categories</h2>
+      <div class="grid-4">
+        <div class="category-card">🥙<span>Parathas</span></div>
+        <div class="category-card">🍛<span>Main Course</span></div>
+        <div class="category-card">🥟<span>Snacks</span></div>
+        <div class="category-card">🫓<span>Indian Breads</span></div>
+      </div>
+    </section>
 
-    <div class="category">
-        🥙<br>
-        Parathas
-    </div>
+    <section class="section">
+      <h2>Today's Special</h2>
+      <div class="special-card">
+        <div class="special-image">🍲</div>
+        <div>
+          <h3>Fresh Homemade Indian Food</h3>
+          <p>Authentic flavours, prepared after ordering, with pickup from José Martí 3325, Pocitos.</p>
+        </div>
+      </div>
+    </section>
 
-    <div class="category">
-        🍛<br>
-        Main Course
-    </div>
+    <section class="section" id="menu">
+      <h2>Popular Today</h2>
 
-    <div class="category">
-        🥟<br>
-        Snacks
-    </div>
+      <div class="food-card">
+        <div class="food-title-row">
+          <h3>Aloo Paratha</h3>
+          <span class="price">170 UYU</span>
+        </div>
+        <p class="desc">3 medium soft whole wheat parathas stuffed with spiced potato filling, finished with butter and made fresh after your order.</p>
+        <div class="meta">
+          <span>🕒 30 mins</span>
+          <span class="available">Available</span>
+        </div>
+        <a class="btn btn-primary full" href="https://wa.me/917077939378?text=Hi%20Nibedita%27s%20Kitchen%2C%20I%20want%20to%20order%20Aloo%20Paratha." target="_blank">Order Now</a>
+      </div>
 
-    <div class="category">
-        🫓<br>
-        Indian Breads
-    </div>
+      <div class="food-card">
+        <div class="food-title-row">
+          <h3>Onion Paratha</h3>
+          <span class="price">170 UYU</span>
+        </div>
+        <p class="desc">3 medium soft parathas made from atta, stuffed with seasoned onions, cooked fresh and brushed with butter.</p>
+        <div class="meta">
+          <span>🕒 1 hr</span>
+          <span class="available">Available</span>
+        </div>
+        <a class="btn btn-primary full" href="https://wa.me/917077939378?text=Hi%20Nibedita%27s%20Kitchen%2C%20I%20want%20to%20order%20Onion%20Paratha." target="_blank">Order Now</a>
+      </div>
 
-</section>
+      <div class="food-card">
+        <div class="food-title-row">
+          <h3>Paneer Paratha</h3>
+          <span class="price">190 UYU</span>
+        </div>
+        <p class="desc">3 medium parathas stuffed with fresh paneer and mild Indian spices, soft inside and lightly crisp outside.</p>
+        <div class="meta">
+          <span>🕒 1 hr</span>
+          <span class="available">Available</span>
+        </div>
+        <a class="btn btn-primary full" href="https://wa.me/917077939378?text=Hi%20Nibedita%27s%20Kitchen%2C%20I%20want%20to%20order%20Paneer%20Paratha." target="_blank">Order Now</a>
+      </div>
 
-<section class="popular">
+      <div class="food-card">
+        <div class="food-title-row">
+          <h3>Kadhai Paneer</h3>
+          <span class="price">230 UYU</span>
+        </div>
+        <p class="desc">Fresh cottage cheese cooked in a flavourful onion-tomato gravy with capsicum and spices. Served in a 350 ml container.</p>
+        <div class="meta">
+          <span>🕒 1 hr</span>
+          <span class="available">Available</span>
+        </div>
+        <a class="btn btn-primary full" href="https://wa.me/917077939378?text=Hi%20Nibedita%27s%20Kitchen%2C%20I%20want%20to%20order%20Kadhai%20Paneer." target="_blank">Order Now</a>
+      </div>
 
-<h2>⭐ Popular Today</h2>
+      <div class="food-card">
+        <div class="food-title-row">
+          <h3>Samosa (5 pcs)</h3>
+          <span class="price">200 UYU</span>
+        </div>
+        <p class="desc">Crispy golden samosas filled with spiced potato and peas, perfect as a fresh homemade snack.</p>
+        <div class="meta">
+          <span>🕒 1 hr</span>
+          <span class="available">Available</span>
+        </div>
+        <a class="btn btn-primary full" href="https://wa.me/917077939378?text=Hi%20Nibedita%27s%20Kitchen%2C%20I%20want%20to%20order%205%20Samosas." target="_blank">Order Now</a>
+      </div>
+    </section>
 
-<div class="food-card">
+    <section class="section">
+      <h2>Why choose us</h2>
+      <div class="info-card">✅ Freshly prepared after your order</div>
+      <div class="info-card">✅ Homemade & hygienic</div>
+      <div class="info-card">✅ Authentic Indian taste</div>
+    </section>
 
-<h3>Aloo Paratha</h3>
+    <section class="section">
+      <h2>Pickup</h2>
+      <div class="pickup-card">
+        <strong>José Martí 3325</strong>
+        <p>Near Cero Market, Pocitos, Montevideo</p>
+        <a href="https://wa.me/917077939378" target="_blank" class="btn btn-secondary full">Ask on WhatsApp</a>
+      </div>
+    </section>
+  </main>
 
-<p>Three soft whole wheat parathas stuffed with spiced potatoes and brushed with butter.</p>
+  <nav class="bottom-nav">
+    <a href="#"><span>🏠</span><small>Home</small></a>
+    <a href="#menu"><span>🍛</span><small>Menu</small></a>
+    <a href="https://wa.me/917077939378" target="_blank"><span>💬</span><small>WhatsApp</small></a>
+  </nav>
 
-<p>🕒 30 mins</p>
-
-<h2>170 UYU</h2>
-
-<button>Add to Cart</button>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>📍 José Martí 3325, Pocitos</p>
-
-<a href="https://wa.me/917077939378">
-<button>💬 WhatsApp Order</button>
-</a>
-
-</footer>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
